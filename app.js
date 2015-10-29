@@ -1,5 +1,4 @@
 $(document).ready(function(){
-  //TODO: Create components for books and book form
 
   // When books are read and entered, this object will keep track like a database
   var booksEntered = {};
@@ -15,8 +14,8 @@ $(document).ready(function(){
 
   });
 
+  //Welcome message would be the first div appended in book-container
   $('.no').on('click', function(){
-    //Welcome message would be the first div appended in book-container
     $('.book-container').find('div:first').remove();
   });
 
@@ -26,7 +25,7 @@ $(document).ready(function(){
     var author = $("input[name='book-author']").val();
     var pic = $("input[name='book-pic']").val();
 
-    //TODO: If pic is invalid format then use placeholder image
+    //TODO: Handle if pic is invalid format then use placeholder image
 
     //Package into object and send to bookCard to check for duplicate entry and post
     bookInfo.title = title;
@@ -39,6 +38,8 @@ $(document).ready(function(){
     $("input[name='book-author']").val('');
   });
 
+  //TODO: Fix menu issue. When menu is clicked in mobile, the nav menu bar disappears
+
   // Toggle menu in mobile screen
   $('.menu-trigger').on('click', function(){
     if (!toggled) {
@@ -48,6 +49,7 @@ $(document).ready(function(){
     } else {
       $('#lightbox').css('display', '');
       $('.menu-pic').attr('src', 'menu_open.svg');
+      $('.nav').css('display', 'block');
       toggled = false;
     }
 
@@ -82,6 +84,7 @@ $(document).ready(function(){
 
   }
   
+  // Mock Initial Data
   var book1 = {title: "El Pooch", author: "Alex Nelson", imgUrl: "http://placehold.it/150x300"};
   var book2 = {title: "The Flight", author: "Scott Masterson", imgUrl: "http://placehold.it/150x300"};
   
