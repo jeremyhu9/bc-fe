@@ -1,0 +1,307 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+body {
+  background: #DCDCDC;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+
+form {
+  margin-left: 15px;
+}
+
+#lightbox {
+  position:fixed; 
+  top:50; 
+  left:0; 
+  width:100%; 
+  height:100%; 
+  background: rgba(0,0,0,.7);
+  text-align:center;
+  display: none;
+  z-index: 100;
+}
+
+
+
+.main-header {
+  height: 80px;
+  background: #FF0066;
+}
+
+.nav {
+  position: relative;
+  height: 80px;
+  background: white;
+  font-size: 0;
+
+}
+
+.nav > div {
+  font-size: 1rem;
+  display: inline-block;
+}
+
+.nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+.nav ul li {
+  position: relative;
+  float: left;
+  top: 20px;
+  font-size: 18px;
+  margin-left: 15px;
+  margin-right: 17px;
+}
+
+.header-title {
+  position: relative;
+  top: 18px;
+  font-family: 'Roboto', sans-serif;
+  left: 22px;
+  color: white;
+  font-size: 30px;
+  margin-top: auto;
+}
+
+.welcome-card, .book-card {
+  width: 49%;
+  min-height: 300px;
+  max-height: 600px;
+  background: white;
+  position: relative;
+  top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 2px 2px 2px #888888;
+  float: left;
+  margin-left: 15px;
+  overflow-x: hidden; 
+}
+
+h1, p, a {
+  font-family: 'Roboto', sans-serif;
+  margin-left: 25px;
+  position: relative;
+  top: 8px;
+}
+
+.welcome-card h1 {
+  color: #FF0066;
+}
+
+.welcome-card p {
+  font-size: 20px;
+}
+
+.welcome-card .top {
+  position: relative;
+  border-bottom: 1px solid gray;
+  max-height: 240px;
+  height: 150px;
+  width: 100%;
+}
+
+.book-card .card-top {
+  position: relative;
+  max-height: 240px;
+  height: 140px;
+  width: 81%;
+  top: 0px;
+}
+
+.book-card .card-bottom {
+  height: 100px;
+  width: 81%;
+}
+
+.welcome-card .bottom, {
+  height: 100px;
+}
+
+.card-top {
+  display: inline-block;
+  min-width: 80%;
+  max-width: 80%;
+}
+
+.card-bottom {
+  display: inline-block;
+  display: inline-block;
+  min-width: 84%;
+  max-width: 84%;
+  border-top: 1px solid gray;
+}
+
+.img-placeholder {
+  display: block;
+  float: left;
+  max-width: 1000px;
+  overflow-x: hidden; 
+}
+
+.welcome-card a, .book-card a {
+  margin-left: 30px;
+  vertical-align: middle;
+  font-size: 23px;
+  position: relative;
+  top: 50px;
+}
+
+.welcome-card a:nth-child(2), .book-card a:nth-child(2) {
+  color: #FFD700;
+}
+
+.menu-trigger {
+  display: none;
+}
+
+
+
+
+/* Mobile devices screen adjustment */
+@media screen and (max-width: 870px) {
+  .menu-trigger {
+    position: relative;
+    display: block;
+    float: left;
+    top: 30px;
+    margin-left: 20px;
+    margin-right: 15px;
+  }
+
+  .nav {
+    display: none;
+    z-index: 100;
+  }
+
+  .nav ul li {
+    position: relative;
+    float: none;
+    border-bottom: 1px solid gray;
+    background: white;
+    padding: 0;
+    margin: 0;
+    height: 60px;
+  }
+
+  .nav ul li a {
+    position: relative;
+    top: 20px;
+    margin-left: 30px;
+  }
+
+  .nav {
+    background: none;
+    position: relative;
+    bottom: 20px;
+  }
+
+  .welcome-card, .book-card {
+    position: relative;
+    min-width: 98%;
+    overflow-x: hidden;
+
+  }
+
+  .card-top {
+    min-width: 84%;
+    max-width: 84%;
+    position: relative;
+    margin: 0;
+  }
+
+  .card-bottom {
+    max-width: 83%;
+    min-width: 83%;
+    position: relative;
+    margin-left: 10px;
+    border-top: 1px solid black;
+    padding: 0px;
+    margin-top: 20px;
+  }
+
+  h1, p, a {
+    font-size: 3vw;
+  }
+
+  .img-placeholder {
+    position: relative;
+    min-width: 15%;
+    max-width: 15%;
+    overflow-x: hidden; 
+  }
+
+  .welcome-card a, .book-card a {
+    margin-left: 50px;
+    vertical-align: middle;
+    font-size: 3vw;
+    position: relative;
+    top: 40px;
+  }
+
+} 
+
+@media screen and (min-width: 870px) and (max-width: 1560px) {
+  .welcome-card, .book-card {
+    position: relative;
+    min-width: 35%;
+    width: 48%;
+    overflow-x: hidden;
+    float: left;
+  }
+
+  .card-top {
+    min-width: 80%;
+    max-width: 80%;
+    position: relative;
+    margin: 0;
+  }
+
+  .card-bottom {
+    max-width: 80%;
+    min-width: 80%;
+    position: relative;
+    margin-left: 10px;
+    border-top: 1px solid black;
+    padding: 0px;
+    margin-top: 20px;
+  }
+
+  h1, p, a {
+    font-size: 1.5vw;
+  }
+
+  .img-placeholder {
+    position: relative;
+    min-width: 15%;
+    max-width: 15%;
+    overflow-x: hidden; 
+  }
+
+  .img-placeholder img {
+    max-height: 15%;
+  }
+
+  .welcome-card a, .book-card a {
+    margin-left: 50px;
+    vertical-align: middle;
+    font-size: 1.5vw;
+    position: relative;
+    top: 60px;
+  }
+}
