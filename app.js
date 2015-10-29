@@ -17,7 +17,7 @@ $(document).ready(function(){
 
   $('.no').on('click', function(){
     //Welcome message would be the first div appended in book-container
-    $(body).find('div:first').remove();
+    $('.book-container').find('div:first').remove();
   });
 
   $('.book-container').on('click', 'button', function(){
